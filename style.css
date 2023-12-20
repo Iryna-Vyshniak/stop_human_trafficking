@@ -22,3 +22,190 @@ body {
 ul {
   list-style: none;
 }
+
+.left,
+.right {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+}
+
+.left {
+  background: #b3b4af;
+  left: 0%;
+  width: 0%;
+}
+
+.right {
+  background: #000;
+  right: 0%;
+  width: 100%;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+}
+
+.nav ul li {
+  display: inline-block;
+  padding: 0 30px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav .logo {
+  flex: 1;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.nav .menu {
+  flex: 1;
+  font-size: 18px;
+}
+
+.nav .collection {
+  flex: 1;
+}
+
+.nav .explore {
+  flex: 4;
+}
+
+.nav .search {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4;
+}
+
+.nav .profile {
+  flex: 0;
+}
+
+.nav .profile .img {
+  background-image: url('./images/stop.jpg');
+  background-position: 50%;
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.img-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 180px;
+  width: 800px;
+  height: 800px;
+  object-fit: cover;
+}
+
+.img-wrapper .displacement {
+  opacity: 0;
+  height: 800px;
+  width: 100%;
+  -webkit-box-shadow: -62px 48px 82px -13px rgba(255, 255, 255, 0.9);
+  -moz-box-shadow: -62px 48px 82px -13px rgba(255, 255, 255, 0.9);
+  box-shadow: -62px 48px 82px -13px rgba(255, 255, 255, 0.9);
+}
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0 10px;
+}
+
+.info li {
+  display: inline-block;
+  padding: 20px 25px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.info i {
+  font-size: 18px;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+}
+
+.title h1 {
+  font-size: 90px;
+  color: #fff;
+  text-shadow: 0px 10px 10px #1b0101;
+  font-family: 'Raiderfont';
+  text-transform: uppercase;
+}
+
+.title p {
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 0px 0.5px 0.5px #1b0101;
+  font-family: monospace;
+}
+
+.slogan {
+  position: absolute;
+  top: 50%;
+  left: 220px;
+  transform: translateY(-50%);
+  font-size: 90px;
+  font-family: 'Raiderfont';
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+}
+
+.bottomnav {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+}
+
+.bottomnav ul li {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.bottomnav ul li:nth-child(2) {
+  font-weight: bolder;
+}
+
+.bottomnav ul li:nth-child(2)::before {
+  content: '';
+  display: inline-block;
+  border: 1px solid #fff;
+  width: 65px;
+  margin: 0 10px 0 -78px;
+  transform: translateY(-3px);
+}
+
+ion-icon {
+  font-size: 16px;
+}
