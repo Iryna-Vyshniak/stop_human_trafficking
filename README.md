@@ -6,6 +6,9 @@ STOP HUMAN TRAFFICKING. Hero Block Showcase with GSAP, Three.js, and Hover-Effec
 
 ---
 
+Experience live _demo_
+[here](https://iryna-vyshniak.github.io/stop_human_trafficking/).
+
 Explore the power of web animation and 3D graphics with this Hero Block repository. This project
 showcases a captivating hero section implemented using three powerful libraries:
 
